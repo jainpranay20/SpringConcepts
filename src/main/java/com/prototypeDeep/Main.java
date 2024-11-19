@@ -8,9 +8,9 @@ public class Main {
         bookShop.setShopName("First shop");
         bookShop.loadData();
 
-        bookShop.getBooks().remove(2);
 
         BookShop bookShop1 = (BookShop) bookShop.clone();
+        bookShop.getBooks().remove(2);  
         bookShop1.setShopName("Second shop");
         System.out.println(bookShop);
         System.out.println(bookShop1);
